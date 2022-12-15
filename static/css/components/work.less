@@ -309,30 +309,32 @@ div.editionTools {
   padding: 10px;
   //border-bottom: 1px solid @lighter-grey;
   margin-bottom: 10px;
-  overflow-x: auto;
+  //overflow-x: auto;
   //background: @grey-fafafa;
 
   &-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex: 1;
     padding: 1% 1%;
-    margin: 0 0.5%;
-    border: 1px solid @lighter-grey;
-    border-radius: 5px;
-    font-size: .7em;
+    border-left: 1px solid @lighter-grey;
+    border-right: 1px solid @lighter-grey;
+    margin-left: -1px;
+    font-size: .8em;
     word-break: break-word;
+    overflow-wrap: break-word;
     text-align:center;
-    min-width: 100px;
+    min-width: 70px;
+    //overflow-x: auto;
 
     div {
       //font-weight: bold;
       margin-bottom: 8px;
       font-weight: lighter;
       color: @grey;
-      word-wrap: break-word;
+
     }
     span {
       a {
